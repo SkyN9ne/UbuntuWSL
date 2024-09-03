@@ -323,7 +323,7 @@ jobs:
         with:
           repository: ubuntu/wsl.wiki
       - name: Download artifacts from all previous matrix runs
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: ${{ env.artifactsPath }}
       - name: Copy modified artifacts to base wiki
